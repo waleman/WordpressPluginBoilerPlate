@@ -13,6 +13,10 @@ License URI: https://direccionaldocumento.com
 */
 
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; 
+}
+
 include_once dirname( __FILE__ ) . '/clases/principal.class.php';
 
 register_activation_hook(__FILE__, array('principal', 'activar'));
